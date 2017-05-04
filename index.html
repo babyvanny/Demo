@@ -1,0 +1,151 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>demo</title>
+<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg" rel="stylesheet">
+<style>
+/* 工具类 */
+.clear:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+html {
+    font-size: 100px;
+}
+body {
+    margin: 0;
+    font-size: 0.12rem;
+}
+
+.header {
+    background: #EA4C88;
+    text-align: center;
+    padding: 0.15rem;
+    font-size: 0.14rem;
+    color: white;
+}
+    .header .fa {
+        margin-top: 0.03rem;
+    }
+
+nav {
+    font-size: 0.14rem;
+    overflow-x: scroll;
+    background: white;
+    position: relative;
+    z-index: 2;
+}
+    nav::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        width: 8rem;
+        position: relative;
+    }
+    nav ul li {
+        float: left;
+        padding: 0.20rem;
+        position: relative;
+    }
+   /* nav ul li:after {
+        content: "";
+        display: block;
+        border-top: solid 0.06rem yellow;
+        border-bottom: solid 0.06rem transparent;
+        border-left: solid 0.06rem transparent;
+        border-right: solid 0.06rem transparent;
+        position: absolute;
+        left: 50%;
+        margin-left: -0.06rem;
+        bottom: -0.06rem;
+    }*/
+
+.cards {
+    background: black;
+}
+    .cards img {
+        float: left;
+        width: 50%;
+        height: 1.50rem;
+    }
+
+.bottom {
+    background: white;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    position: relative;
+}
+    .bottom .fa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -0.07rem;
+        font-size: 0.14rem;
+        margin-top: -0.07rem;
+    }
+</style>
+</head>
+<body>
+
+<div class="header clear">
+    <i class="fa fa-bars fl" aria-hidden="true"></i>
+    <span>UI设计师</span>
+    <i class="fa fa-refresh fr" aria-hidden="true"></i>
+</div>
+
+<nav>
+    <ul class="clear">
+        <li>首页</li>
+        <li>作品</li>
+        <li>教程</li>
+        <li>素材</li>
+        <li>训练营</li>
+    </ul>
+</nav>
+
+
+
+<div class="cards clear">
+    <img src="" alt="11111">
+    <img src="" alt="11111">
+    <img src="" alt="11111">
+    <img src="" alt="11111">
+    <img src="" alt="11111">
+    <img src="" alt="11111">
+</div>
+
+<div class="bottom">
+    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+</div>
+
+
+<script>
+
+// 页面变化时, 更新html字体大小, 从而整体放大缩小页面
+var adjustWith = function (baseWidth) {
+    var rate = window.innerWidth/baseWidth;
+    console.log(111)
+    document.getElementsByTagName("html")[0].style.fontSize = 100 * rate + "px";
+}
+document.body.onload = window.onresize = function () {
+    adjustWith(320);
+}
+</script>
+
+</body>
+</html>

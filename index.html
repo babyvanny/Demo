@@ -12,12 +12,6 @@
     display: table;
     clear: both;
 }
-.fl {
-    float: left;
-}
-.fr {
-    float: right;
-}
 
 html {
     font-size: 100px;
@@ -30,21 +24,51 @@ body {
 .header {
     background: #EA4C88;
     text-align: center;
-    padding: 0.15rem;
     font-size: 0.14rem;
     color: white;
-}
-    .header .fa {
-        margin-top: 0.03rem;
-    }
+    height: 0.64rem;
+    position: relative;
 
+}
+    .header .fl {
+        float: left;
+        width: 0.21rem;
+        height:0.2rem;
+        margin-left: 0.12rem;
+        margin-top: 0.32rem;
+        cursor: pointer;
+    }
+    .header .fr {
+        float: right;
+        height: 0.22rem;
+        width: 0.19rem;
+        margin-right: 0.12rem;
+        margin-top: 0.32rem;
+        cursor: pointer;
+
+    }
+    .header .fm{
+            height: 0.17rem;
+            width: 0.6rem;
+            margin-top: 0.32rem;
+
+         }
+  .trangle{
+        width: 0.13rem;
+        height:0.11rem;
+        position: relative;
+        top: 0;
+        left: 0.34rem;
+        z-index: 999;
+
+    }
 nav {
     font-size: 0.14rem;
     overflow-x: scroll;
     background: white;
     position: relative;
     z-index: 2;
-    box-shadow: 0 0.01rem 0.05rem grey;
+    box-shadow: 0 0.01rem 0.05rem black;
 }
     nav::-webkit-scrollbar {
         width: 0;
@@ -77,6 +101,7 @@ nav {
 
 .cards {
     background: black;
+    margin-top: -0.11rem;
 }
     .cards img {
         float: left;
@@ -104,9 +129,9 @@ nav {
 <body>
 
 <div class="header clear">
-    <i class="fa fa-bars fl" aria-hidden="true"></i>
-    <span>UI设计师</span>
-    <i class="fa fa-refresh fr" aria-hidden="true"></i>
+    <img class="fl" src="img/menu-icon.png">
+    <img class="fm" src="img/UI.png">
+    <img class="fr" src="img/Refresh.png">
 </div>
 
 <nav>
@@ -118,7 +143,7 @@ nav {
         <li>训练营</li>
     </ul>
 </nav>
-
+ <img class="trangle" src="img/Polygon-2.png" alt=""><br>
 <div class="cards clear">
    <img src="img/layer-2.png" alt="11111">
    <img src="img/layer-3.png" alt="11111">

@@ -12,12 +12,7 @@
     display: table;
     clear: both;
 }
-.fl {
-    float: left;
-}
-.fr {
-    float: right;
-}
+
 
 html {
     font-size: 100px;
@@ -30,22 +25,59 @@ body {
 .header {
     background: #EA4C88;
     text-align: center;
-    padding: 0.15rem;
     font-size: 0.14rem;
     color: white;
-}
-    .header .fa {
-        margin-top: 0.03rem;
-    }
+    height: 0.64rem;
+    position: relative;
+    z-index: 999;
 
-.user-info {
-    text-align: center;
 }
-    .user-info img {
-        width: 0.90rem;
-        height: 0.90rem;
-        margin-top: 0.20rem;
-        margin-bottom: 0.08rem;
+    .header .fl {
+        float: left;
+        width: 0.21rem;
+        height:0.2rem;
+        margin-left: 0.12rem;
+        margin-top: 0.32rem;
+        cursor: pointer;
+    }
+    .header .fr {
+        float: right;
+        height: 0.22rem;
+        width: 0.19rem;
+        margin-right: 0.12rem;
+        margin-top: 0.32rem;
+        cursor: pointer;
+
+    }
+    .header .fm{
+            height: 0.17rem;
+            width: 0.6rem;
+            margin-top: 0.32rem;
+
+         }
+.user-info {
+  
+    text-align: center;
+    height: 2.96rem;
+    box-shadow: 0 0.01rem 0.2rem black; 
+
+    position: relative;
+
+  }
+  .trangle{
+       width: 0.08rem;
+        height:0.06rem;
+        position: relative;
+        top: 0;
+        left: 0.36rem;
+        z-index: 999
+    }
+    .user-info .photo_u {
+        width: 1.27rem;
+        height: 1.39rem;
+        margin-top: 0.24rem;
+        margin-bottom: 0.15rem;
+       
     }
     .user-info .user-name {
         font-size: 0.16rem;
@@ -59,17 +91,44 @@ body {
         margin-top: 0.04rem;
     }
     .user-info .detail {
-        margin-top: 0.40rem;
+        height: 0.2rem;
         font-size: 0.14rem;
         margin-bottom: 0.20rem;
+        margin-top:0.36rem;
     }
         .user-info .detail > div {
             float: left;
             width: 25%;
         }
 
+    .detail span{
+        color:grey;
+    }
+    .detail span.over-blod{
+        font-weight: 800;
+        color: black
+    }
+    .detail .detail_a{
+        width: 0.21rem;
+        height: 0.18rem;      
+    }
+    .detail .detail_b{
+        width: 0.21rem;
+        height: 0.2rem;      
+    }
+
+    .detail .detail_c{
+        width: 0.21rem;
+        height: 0.2rem;      
+    }
+    .detail .detail_d{
+        width: 0.16rem;
+        height: 0.2rem;      
+    }
+
 .cards {
     background: black;
+    margin-top: -0.06rem;
 }
     .cards img {
         float: left;
@@ -92,52 +151,44 @@ body {
         font-size: 0.14rem;
         margin-top: -0.07rem;
     }
-    .detail span{
-        color:grey;
-    }
-    .detail span.over-blod{
-        font-weight: 800;
-        color: black
-    }
-    .detail img{
-        width: 13.43%;
-      
-    }
+ 
 </style>
 </head>
 <body>
 
 <div class="header clear">
-    <i class="fa fa-bars fl" aria-hidden="true"></i>
-    <span>UI设计师</span>
-    <i class="fa fa-envelope-o fr" aria-hidden="true"></i>
+    <img class="fl" src="img/menu-icon.png">
+    <img class="fm" src="img/UI.png">
+    <img class="fr" src="img/Refresh.png">
 </div>
 
 <div class="user-info">
-    <img src="img/photo_u.png" alt=""><br>
+    <img class="photo_u" src="img/photo_u.png" alt=""><br>
+  
+
     <span class="user-name">Mark Dvorak</span><br>
     <span class="user-email">www.hipstacowboys.com</span>
 
     <div class="detail clear">
         <div>
-            <i class="fa fa-picture-o" aria-hidden="true"></i>
+            <img class="detail_a" src="img/picture-kopie.png">
             <span class="over-blod">26</span>
         </div>
         <div>
-            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            <img class="detail_b"src="img/Briefcase.png">
             <span>3</span>
         </div>
         <div>
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
+               <img class="detail_c" src="img/Likes-kopie.png">
             <span>285</span>
         </div>
         <div>
-            <img src="img/Likes-kopie.png">
+            <img class="detail_d" src="img/Bucket.png">
             <span>12</span>
         </div>
     </div>
 </div>
-
+  <img class="trangle" src="img/Polygon-1.png" alt=""><br>
 <div class="cards clear">
     <img src="img/layer-2.png" alt="11111">
     <img src="img/layer-3.png" alt="11111">

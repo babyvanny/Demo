@@ -7,3 +7,13 @@ var adjustWith = function (baseWidth) {
 document.body.onload = window.onresize = function () {
     adjustWith(320);
 }
+
+$(".index-go>img").click(function(){
+
+      window.location.href="arts.html"
+})
+
+$(".arts-go>img").click(function(){
+
+      window.location.href="designerInfo.html"
+})

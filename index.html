@@ -5,126 +5,7 @@
 <title>demo</title>
 <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="http://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg" rel="stylesheet">
-<style>
-/* 工具类 */
-.clear:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-html {
-    font-size: 100px;
-}
-body {
-    margin: 0;
-    font-size: 0.12rem;
-}
-
-.header {
-    background: #EA4C88;
-    text-align: center;
-    font-size: 0.14rem;
-    color: white;
-    height: 0.64rem;
-    position: relative;
-
-}
-    .header .fl {
-        float: left;
-        width: 0.21rem;
-        height:0.2rem;
-        margin-left: 0.12rem;
-        margin-top: 0.32rem;
-        cursor: pointer;
-    }
-    .header .fr {
-        float: right;
-        height: 0.22rem;
-        width: 0.19rem;
-        margin-right: 0.12rem;
-        margin-top: 0.32rem;
-        cursor: pointer;
-
-    }
-    .header .fm{
-            height: 0.17rem;
-            width: 0.6rem;
-            margin-top: 0.32rem;
-
-         }
-  .trangle{
-        width: 0.13rem;
-        height:0.11rem;
-        position: relative;
-        top: 0;
-        left: 0.34rem;
-        z-index: 999;
-
-    }
-nav {
-    font-size: 0.14rem;
-    overflow-x: scroll;
-    background: white;
-    position: relative;
-    z-index: 2;
-    box-shadow: 0 0.01rem 0.05rem black;
-}
-    nav::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-    }
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding-left: 0;
-        width: 8rem;
-        position: relative;
-    }
-    nav ul li {
-        float: left;
-        padding: 0.20rem;
-        position: relative;
-    }
-   /* nav ul li:after {
-        content: "";
-        display: block;
-        border-top: solid 0.06rem yellow;
-        border-bottom: solid 0.06rem transparent;
-        border-left: solid 0.06rem transparent;
-        border-right: solid 0.06rem transparent;
-        position: absolute;
-        left: 50%;
-        margin-left: -0.06rem;
-        bottom: -0.06rem;
-    }*/
-
-.cards {
-    background: black;
-    margin-top: -0.11rem;
-}
-    .cards img {
-        float: left;
-        width: 50%;
-        height: 1.50rem;
-    }
-
-.bottom {
-    background: white;
-    height: 2rem;
-    line-height: 2rem;
-    text-align: center;
-    position: relative;
-}
-    .bottom .fa {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -0.07rem;
-        font-size: 0.14rem;
-        margin-top: -0.07rem;
-    }
-</style>
+<link type="text/css" rel="stylesheet" href="css/index.css" />
 </head>
 <body>
 
@@ -143,26 +24,25 @@ nav {
         <li>训练营</li>
     </ul>
 </nav>
- <img class="trangle" src="img/Polygon-2.png" alt=""><br>
-<div class="cards clear">
-   <img src="img/layer-2.png" alt="11111">
-   <img src="img/layer-3.png" alt="11111">
-   <img src="img/layer-4.png" alt="11111">
-   <img src="img/layer-5.png" alt="11111">
-   <img src="img/layer-6.png" alt="11111">
-   <img src="img/layer-7.png" alt="11111">
-   <img src="img/vrstva-7.png" alt="11111">
-   <img src="img/vrstva-8.png" alt="11111">
-   <img src="img/vrstva-9.png" alt="11111">
-   <img src="img/vrstva-10.png" alt="11111">
-
+<img class="trangle" src="img/Polygon-2.png" alt=""><br>
+<div class="cards index-go clear">
+   <img src="img/layer-2.png" alt="11111" href="">
+   <img src="img/layer-3.png" alt="11111" href="">
+   <img src="img/layer-4.png" alt="11111" href="">
+   <img src="img/layer-5.png" alt="11111" href="">
+   <img src="img/layer-6.png" alt="11111" href="">
+   <img src="img/layer-7.png" alt="11111" href="">
+   <img src="img/vrstva-7.png" alt="11111" href="">
+   <img src="img/vrstva-8.png" alt="11111" href="">
+   <img src="img/vrstva-9.png" alt="11111" href="">
+   <img src="img/vrstva-10.png" alt="11111" href="">
 </div>
 
 <div class="bottom">
     <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
 </div>
-
-<script src="./js/common.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/common.js"></script>
 
 </body>
 </html>
